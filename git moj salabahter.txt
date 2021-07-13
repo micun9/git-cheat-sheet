@@ -1,0 +1,20 @@
+Check git version:
+    git --version
+Initialize Git on the current folder
+    git init
+Set the user name for the current repository
+    git config user.name "name" //same for email
+Check the status of the Git
+    git status
+Add file_name to the Staging Environment
+    git add file_name
+Stage all new, modified, and deleted files. Use the shorthand command:
+    git add -A
+Commit the changes to the current repository with the message "Message!"
+    git commit -m "Message!"
+Check the compact version of the status for repository
+    git status --short
+Commit the updated files directly, skipping the staging Environment
+    git commit -a -m "Message!"
+View the history of commits for the repository
+    git log
