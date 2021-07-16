@@ -18,3 +18,69 @@ Commit the updated files directly, skipping the staging Environment
     git commit -a -m "Message!"
 View the history of commits for the repository
     git log
+Show possible options for the status command in the command line
+    git status -help
+Show all git possible commands in command line
+    git help --all
+Create a new branch called name
+    git branch name
+List the existing branches
+    git branch
+Move to the name branch
+    git checkout name
+Create, and move to a new branch with the name name
+    git  checkout -b name
+Merge the hello-you branch with the current branch
+    git merge hello-you
+Remove the hello-you branch from the local repository
+    git branch -d hello-you
+Add a remote repository as an origin
+    git remote add origin https://github.com/x/y.git
+Pull is a combination of
+    fetch and merge
+Get all the change history of the origin for this branch
+    git fetch origin
+Merge the current branch with the branch master, on origin
+    git merger origin/master
+Update the current branch from its origin using a single command
+    git pull origin
+push the current branch to its default remote origin
+    git push origin
+List all local and remote branches of the current Git
+    git branch -a
+List only remote branches of the current Git
+    git branch -r
+Clone the repository: https://abc.com/x/y.git to your local Git
+    git clone https://abc.com/x/y.git to your local Git:
+Clone the repository https://abc.com/x/y.git toa folder named "newlife"
+    git clone https://abc.com/x/y.git newlife
+Rename the origin remote to upstream
+    git remote rename origin upstream
+In .gitignore add a line to ignore all .temp files
+    *temp
+In gitignore add a line to ognore all files in any directory named temp
+    temp/
+In .gitignore add a single line to ignore all files named temp1.log, temp2.log,
+and temp3.log
+    temp?.log
+In .gitignore, ignore all .log files, except main.log:
+    *.log
+    !main.log
+Add a new remote named ssh-origin connectiong to x/y.git on abc.com using SSH
+    git remote add ssh-origin git@abc.com:x/y.git
+Replace the remote URL for origin with x/y.git on abc.com using SSH
+    git remote set-url origin git@abc.com:x/y.git
+Show the log of the repository, showing just 1 line per commit
+    git log --oneline
+Revert the latest commit
+    git revert HEAD
+revert the latest commit, skipping the commit message editor
+    git revert HEAD --no-edit
+revert the two last commits
+    git revert HEAD~1
+reset to the commit with the hash abc1234
+    git reset abc1234
+Amend the previous commit to with the message "Updated index"
+    git commit --amend "Updated index"
+
+
